@@ -14,7 +14,7 @@ Add this to your `.pre-commit-config.yaml`:
 
 ```yaml
 -   repo: https://github.com/chiselwright/pre-commit-rescuetime
-    rev: v0.0.2
+    rev: v0.0.3
     hooks:
     -   id: rescuetime-highlight
 ```
