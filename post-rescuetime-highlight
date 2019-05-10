@@ -1,6 +1,13 @@
 #!/bin/bash
 # Log commit messages as a 'highlight' in RescueTime Premium
 function post_highlight {
+    # to allow people to install the hook, but not force everyone to use
+    # RescueTime we will just pass if the token value isn't set
+    if [ -z "${RESCUETIME_API_KEY}" ]; then
+        #echo "RESCUETIME_API_KEY not set";
+        return 0;
+    fi
+
     # either use the user supplied RESCUETIME_API_KEY value, or fail with a
     # message
     API_KEY=${RESCUETIME_API_KEY?needs to be set};
