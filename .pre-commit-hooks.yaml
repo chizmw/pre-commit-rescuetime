@@ -1,0 +1,5 @@
+- id:       rescuetime-highlight
+  name:     rescuetime-highlight
+  entry:    post-rescuetime-highlight
+  language: script
+  args:     []
